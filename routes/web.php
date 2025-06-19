@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\KurirController;
 use App\Http\Controllers\PesananController;
 use Illuminate\Support\Facades\Route;
@@ -62,6 +63,11 @@ Route::middleware(['auth', 'customer'])->group(function () {
     Route::get('/pesan/{produk}', [PesananController::class, 'create'])->name('pesanan.create');
     Route::post('/pesan', [PesananController::class, 'store'])->name('pesanan.store');
     Route::get('/transaksi/saya', [PesananController::class, 'transaksiSaya'])->name('customer.transaksi');
+    Route::get('/lihatproduk', [CustomerController::class, 'lihatProduk'])->name('customer.lihatProduk');
+    Route::get('/lihatabout', [CustomerController::class, 'lihatabout'])->name('customer.lihatabout');
+    Route::get('/lihathome', [CustomerController::class, 'lihathome'])->name('customer.lihathome');
+    Route::get('/transaksiSaya', [PesananController::class, 'transaksiSaya'])->name('customer.lihattransaksi');
+    // Route::get('/team',fun)
 });
 
 Route::middleware(['auth', 'kurir'])->group(function () {

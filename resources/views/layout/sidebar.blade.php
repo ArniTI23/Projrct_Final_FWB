@@ -186,7 +186,7 @@
                 <span class="nav-link-text ms-1">Pesanan</span>
                 </a>
             </li>
-
+{{-- 
             <!-- Riwayat Pesanan -->
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('kurir.dashboard') }}">
@@ -195,7 +195,7 @@
                 </div>
                 <span class="nav-link-text ms-1">Dashboard</span>
                 </a>
-            </li>
+            </li> --}}
             @endif 
 
 

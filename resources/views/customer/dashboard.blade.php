@@ -1,4 +1,4 @@
-@extends('master')
+{{-- @extends('master')
 
 @section('breadcrumb')
   <li class="breadcrumb-item text-sm"><a class="opacity-5 text-white" href="#">Customer</a></li>
@@ -52,4 +52,8 @@
         </table>
 
     </div>
-@endsection
+@endsection --}}
+
+
+
+

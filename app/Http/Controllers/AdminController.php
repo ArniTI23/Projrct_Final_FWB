@@ -22,6 +22,12 @@ class AdminController extends Controller
     $produks = Produk::all();
     return view('admin.dashboard', compact('produks')); // Pastikan file master1.blade.php ada
 }
+  public function indexCustomer()
+    {
+        $produk=Produk::all();
+        return view('customer.team',compact('produk'));
+        
+    }
 
 
     public function tambahProduk(){
@@ -38,7 +44,7 @@ class AdminController extends Controller
         ]);
         $path = $request->file('foto_produk')->store('produk', 'public');
         Produk::create([
-            'nama'=>$request->nama_produk,
+            'nama'=>$request->nama,
             'deskripsi'=>$request->deskripsi,
             'harga'=>$request->harga,
             'stok'=>$request->stok,
@@ -128,12 +134,6 @@ class AdminController extends Controller
         return redirect()->route('admin.dashboard')->with('success', 'Produk dihapus');
     }
 
-    public function indexCustomer()
-    {
-        $produks = Produk::all();
-        return view('customer.dashboard', compact('produks'));
-        
-    }
 
     public function semuaTransaksi()
     {
