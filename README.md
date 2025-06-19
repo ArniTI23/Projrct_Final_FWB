@@ -20,6 +20,7 @@
 - Menghapus akun customer atau kurir jika diperlukan
 - Menambahkan, mengedit, dan menghapus produk 
 - Melihat semua transaksi dan pesanan yang masuk
+- Melihat status pengiriman
 
 ### 2. Kurir
 - Melihat pesanan yang masuk
