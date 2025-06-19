@@ -16,19 +16,19 @@
 ---
 ## Role dan Fitur-Fiturnya
 ### 1. Admin
-- Melihat user lain yang memiliki akun di database
-- Menghapus akun penjual atau pembeli
-- Menghapus produk yang di post oleh penjual
-- Melihat Riwayat transaksi
+- Melihat dan mengelola semua pengguna
+- Menghapus akun customer atau kurir jika diperlukan
+- Menambahkan, mengedit, dan menghapus produk 
+- Melihat semua transaksi dan pesanan yang masuk
 
-### 2. Penjual
-- Menambah, mengedit, dan menghapus produk
-- Melihat daftar produk miliknya
-- Melihat riwayat penjualan (dari detail transaksi)
+### 2. Kurir
+- Melihat pesanan yang masuk
+- Mengkonfirmasi pesanan yang selesai di antar
 
-### 3. Pembeli
+### 3. Customer
 - Melihat dan mencari produk
-- Melakukan pembelian
+- Melakukan pembelian produk 
+- Melihat status pengiriman dari pesanan yang telah dilakukan
 - Melihat riwayat pembelian pribadi
 
 ---
