@@ -16,7 +16,7 @@
             <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
               <div class="team-member d-flex">
                 <div class="member-img">
-                  <img src="{{ asset('storage/' . $item->foto_produk) }}" class="img-fluid" alt="{{ $item->nama }}" loading="lazy" style="object-fit:cover; height:200px; width:200px;">
+                  <img src="{{ asset('storage/' . $item->foto_produk) }}" class="img-fluid" alt="{{ $item->nama }}" loading="lazy" style="object-fit:cover; height:250px; width:250px;">
                 </div>
                 <div class="member-info flex-grow-1">
                   <h4>{{ $item->nama }}</h4>

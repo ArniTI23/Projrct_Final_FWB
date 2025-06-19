@@ -1,72 +1,3 @@
-{{-- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Login</title>
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-
-<body class="bg-light d-flex align-items-center" style="min-height: 100vh;">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-6">
-                <div class="card shadow">
-                    <div class="card-body">
-                        <h3 class="text-center mb-4">Login</h3>
-
-                        @if (session('gagal'))
-                            <div class="alert alert-danger">
-                                {{ session('gagal') }}
-                            </div>
-                        @endif
-
-                        <form action="{{ route('login.submit') }}" method="POST">
-                            @csrf
-                            
-                            <div class="mb-3">
-                                <label for="nama" class="form-label">Nama:</label>
-                                <input type="text" class="form-control @error('nama') is-invalid @enderror" id="nama" name="nama" value="{{ old('nama') }}" required autofocus>
-                                @error('nama_pengguna')
-                                    <div class="invalid-feedback">{{ $message }}</div>
-                                @enderror
-                            </div>
-
-                            <div class="mb-3">
-                                <label for="kata_sandi" class="form-label">Kata Sandi:</label>
-                                <input type="password" class="form-control @error('kata_sandi') is-invalid @enderror" id="kata_sandi" name="kata_sandi" required>
-                                @error('kata_sandi')
-                                    <div class="invalid-feedback">{{ $message }}</div>
-                                @enderror
-                            </div>
-
-                            <button type="submit" class="btn btn-primary w-100">Login</button>
-                        </form>
-
-                        <p class="mt-3 text-center">
-                            Belum punya akun?
-                            <a href="{{ route('register') }}">Daftar</a>
-                        </p>
-                        <p class="text-center">
-                            <a href="{{ url('/') }}">Kembali ke Beranda</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Bootstrap JS Bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-
-</html> --}}
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -133,14 +64,17 @@
                   </form>
                 </div>
 
-                <!-- Link ke Register -->
+                <!-- Footer dengan navigasi -->
                 <div class="card-footer text-center pt-0 px-lg-2 px-1">
-                  <p class="mb-4 text-sm mx-auto">
+                  <p class="mb-2 text-sm mx-auto">
                     Belum punya akun?
                     <a href="{{ route('register') }}" class="text-primary text-gradient font-weight-bold">Daftar di sini</a>
                   </p>
+                  <p class="mb-2 text-sm mx-auto">
+                    <a href="{{ url('/') }}" class="text-primary text-gradient font-weight-bold">Kembali ke Beranda</a>
+                  </p>
                   <p class="text-sm mx-auto">
-                    <a href="{{ url('/') }}" class="text-secondary text-gradient font-weight-bold">Kembali ke Beranda</a>
+                    <a href="javascript:history.back()" class="text-secondary text-gradient font-weight-bold">← Kembali ke halaman sebelumnya</a>
                   </p>
                 </div>
               </div>
@@ -152,10 +86,11 @@
                 style="background-image: url('https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/signin-ill.jpg');
                 background-size: cover;">
                 <span class="mask bg-gradient-primary opacity-6"></span>
-                <h4 class="mt-5 text-white font-weight-bolder position-relative">"Perhatian adalah mata uang baru"</h4>
-                <p class="text-white position-relative">Tampilan yang menarik bisa meningkatkan pengalaman pengguna.</p>
+                <h4 class="mt-5 text-white font-weight-bolder position-relative">"Login sekarang"</h4>
+                <p class="text-white position-relative">Masuk untuk mulai menjelajahi keindahan kain lokal dari Mamasa.</p>
               </div>
             </div>
+
           </div>
         </div>
       </div>

@@ -1,31 +1,3 @@
-{{-- @extends('master1')
-@section('breadcrumb')
-  <li class="breadcrumb-item text-sm"><a class="opacity-5 text-white" href="#">Dashboard</a></li>
-  <li class="breadcrumb-item text-sm text-white active" aria-current="page">Edit Produk</li>
-@endsection
-@section('konten')
-    <form action="{{ route('admin.editProduk', $produk->id) }}" method="POST">
-        @csrf
-
-        <div>
-            <label for="nama">Nama Produk:</label>
-            <input type="text" id="nama" name="nama" value="{{ $produk->nama }}" required>
-        </div>
-        <div>
-            <label for="harga">Harga:</label>
-            <input type="number" id="harga" name="harga" value="{{ $produk->harga }}" required>
-        </div>
-        <div>
-            <label for="stok">Stok:</label>
-            <input type="number" id="stok" name="stok" value="{{ $produk->stok }}" required>
-        </div>
-        
-        <button type="submit">Simpan</button>
-
-    </form>
-@endsection --}}
-
-
 
 @extends('master1')
 
