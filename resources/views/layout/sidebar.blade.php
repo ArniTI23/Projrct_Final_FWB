@@ -1,91 +1,3 @@
-      {{-- <div class="sidebar" data-background-color="dark">
-            <div class="sidebar-logo">
-                <!-- Logo Header -->
-                <div class="logo-header" data-background-color="dark">
-                    <a href="index.html" class="logo">
-                        <img src="{{ asset('kai') }}/assets/img/kaiadmin/logo_light.svg" alt="navbar brand" class="navbar-brand"
-                            height="20" />
-                    </a>
-                    <div class="nav-toggle">
-                        <button class="btn btn-toggle toggle-sidebar">
-                            <i class="gg-menu-right"></i>
-                        </button>
-                        <button class="btn btn-toggle sidenav-toggler">
-                            <i class="gg-menu-left"></i>
-                        </button>
-                    </div>
-                    <button class="topbar-toggler more">
-                        <i class="gg-more-vertical-alt"></i>
-                    </button>
-                </div>
-                <!-- End Logo Header -->
-            </div>
-            <div class="sidebar-wrapper scrollbar scrollbar-inner">
-                <div class="sidebar-content">
-                    <ul class="nav nav-secondary">
-                        
-                       @if (Auth::user()->role == 'admin')
-                        <li class="nav-item">
-                            <a href="{{ route('admin.dashboard') }}">
-                                <i data-feather="layout"></i>
-                                <p>Dashboard</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="{{ route('admin.tambahProduk') }}">
-                                <i data-feather="plus-square"></i>
-                                <p>Tambah Produk</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="{{ route('admin.transaksi') }}">
-                                <i class="fas fa-plus-square"></i>
-                                <p>Lihat Transaksi</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="{{ route('admin.lihatAkun') }}">
-                                <i class="fas fa-plus-square"></i>
-                                <p>Lihat Akun</p>
-                            </a>
-                        </li>
-                         <li class="nav-item">
-                            <a href="{{ route('admin.tambah-akun') }}">
-                                <i class="fas fa-plus-square"></i>
-                                <p>Tambah Akun</p>
-                            </a>
-                        </li>
-                        
-                        @elseif (Auth::user()->role == 'customer')
-                        <li class="nav-item">
-                            <a href="{{ route('customer.dashboard') }}">
-                                <i class="fas fa-tachometer-alt"></i>
-                                <p>Lihat Produk</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="{{ route('customer.transaksi') }}">
-                                <i class="fas fa-shopping-cart"></i>
-                                <p>RiwayatTransaksi</p>
-                            </a>
-                        </li>
-
-                        @elseif (Auth::user()->role == 'kurir')
-                        <li class="nav-item">
-                            <a href="{{ route('kurir.transaksi') }}">
-                                <i class="fas fa-shopping-cart"></i>
-                                <p>Lihat Pesanan</p>
-                            </a>
-                        </li>
-                       @endif
-                    </ul>
-                </div>
-            </div>
-        </div> --}}
-
-
-
-
 
 <aside class="sidenav bg-white navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-4" id="sidenav-main">
     <div class="sidenav-header">
@@ -134,14 +46,6 @@
                         <span class="nav-link-text ms-1">Daftar User</span>
                     </a>
                 </li>
-                {{-- <li class="nav-item">
-                    <a class="nav-link" href="{{ route('admin.tambah-akun') }}">
-                        <div class="icon icon-shape icon-sm text-center me-2 d-flex align-items-center justify-content-center">
-                            <i class="ni ni-fat-add text-success text-sm opacity-10"></i>
-                        </div>
-                        <span class="nav-link-text ms-1">Tambah Akun</span>
-                    </a>
-                </li> --}}
             @endif
 
             {{-- Customer Sidebar --}}
@@ -163,19 +67,6 @@
                     </a>
                 </li>
             @endif
-
-            {{-- Kurir Sidebar --}}
-            {{-- @if (Auth::user()->role === 'kurir')
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('kurir.transaksi') }}">
-                        <div class="icon icon-shape icon-sm text-center me-2 d-flex align-items-center justify-content-center">
-                            <i class="ni ni-delivery-fast text-danger text-sm opacity-10"></i>
-                        </div>
-                        <span class="nav-link-text ms-1">Lihat Pesanan</span>
-                    </a>
-                </li>
-            @endif --}}
-
             @if (Auth::user()->role === 'kurir')
             <!-- Lihat Pesanan Masuk -->
             <li class="nav-item">
@@ -186,16 +77,6 @@
                 <span class="nav-link-text ms-1">Pesanan</span>
                 </a>
             </li>
-{{-- 
-            <!-- Riwayat Pesanan -->
-            <li class="nav-item">
-                <a class="nav-link" href="{{ route('kurir.dashboard') }}">
-                <div class="icon icon-shape icon-sm text-center me-2 d-flex align-items-center justify-content-center">
-                    <i class="ni ni-archive-2 text-success text-sm opacity-10"></i>
-                </div>
-                <span class="nav-link-text ms-1">Dashboard</span>
-                </a>
-            </li> --}}
             @endif 
 
 

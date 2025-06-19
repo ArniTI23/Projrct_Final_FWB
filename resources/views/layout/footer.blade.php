@@ -5,7 +5,7 @@
               <ul class="nav">
                 <li class="nav-item">
                   <a class="nav-link" href="http://www.themekita.com">
-                    Galonku
+                    Mamasa Wecra
                   </a>
                 </li>
                 <li class="nav-item">
@@ -18,7 +18,7 @@
             </nav>
             <div class="copyright">
               2025, made with <i class="fa fa-heart heart text-danger"></i> by
-              <a href="http://www.themekita.com">Rahmat Rahmadi</a>
+              <a href="http://www.themekita.com">Mamasa Wecra</a>
             </div>
 
           </div>

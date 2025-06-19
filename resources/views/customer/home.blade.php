@@ -20,7 +20,7 @@
               <div class="description">
                 <p>Keindahan Kain Tradisional Mamasa dalam Gaya Modern.</p>
                 <P>Temukan keunikan budaya melalui koleksi kain khas Mamasa seperti sarung, baju tenun, dan berbagai produk etnik lainnya.
-            Kami menghadirkan warisan lokal dalam sentuhan kontemporer untuk memperkaya identitas dan gaya Anda.</P>
+                Kami menghadirkan warisan lokal dalam sentuhan kontemporer untuk memperkaya identitas dan gaya Anda.</P>
               </div>
 
             </div>
